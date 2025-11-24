@@ -14,23 +14,71 @@ This Verilog code implements a synchronous FIFO (First-In First-Out) that uses a
 * Clean reset behavior
 
 ## Parameters
-<br>
-| Parameter     | Description     |
-|---------------|-----------------|
-| `width`       | Width of each FIFO entry (default: 8 bits) |
-| `depth`       | Number of FIFO storage locations (default: 16) |
-| `add_bus`     | Address pointer width (default: 4 bits) |
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>width</td>
+    <td>Width of each FIFO entry (default: 8 bits)</td>
+  </tr>
+  <tr>
+    <td>depth</td>
+    <td>Number of FIFO storage locations (default: 16)</td>
+  </tr>
+  <tr>
+    <td>add_bus</td>
+    <td>Address pointer width (default: 4 bits)</td>
+  </tr>
+</table>
+
 
 ## Input/Output Ports
-<br>
-| Signal | Direction | Description |
-|--------|-----------|-------------|
-| clk    | Input     | Clock signal |
-| rst    | Input     | Active-high reset |
-| we     | Input     | Write enable |
-| re     | Input     | Read enable |
-| din    | Input     | Data input |
-| dout     | Output(reg)    | Data output |
-| full     | Output     | FIFO full flag |
-| empty    | Output     | FIFO empty flag |
-
+<table>
+  <tr>
+    <th>Signal</th>
+    <th>Direction</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>clk</td>
+    <td>Input</td>
+    <td>Clock signal</td>
+  </tr>
+  <tr>
+    <td>rst</td>
+    <td>Input</td>
+    <td>Active-high reset</td>
+  </tr>
+  <tr>
+    <td>we</td>
+    <td>Input</td>
+    <td>Write enable</td>
+  </tr>
+  <tr>
+    <td>re</td>
+    <td>Input</td>
+    <td>Read enable</td>
+  </tr>
+  <tr>
+    <td>din</td>
+    <td>Input</td>
+    <td>Data input</td>
+  </tr>
+  <tr>
+    <td>dout</td>
+    <td>Output (reg)</td>
+    <td>Data output</td>
+  </tr>
+  <tr>
+    <td>full</td>
+    <td>Output</td>
+    <td>FIFO full flag</td>
+  </tr>
+  <tr>
+    <td>empty</td>
+    <td>Output</td>
+    <td>FIFO empty flag</td>
+  </tr>
+</table>
