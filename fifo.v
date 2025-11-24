@@ -15,7 +15,7 @@ module syc_fifo(clk,rst,we,re,din,full,empty,dout);
 
     // memory logic
     always@(posedge clk) begin: b1
-	     integer i;
+	    integer i;
         if(rst) begin
             dout <= 0;
             for (i=0; i<depth; i=i+1) fifo_mem[i] <= 0; // fifo initialize 0
