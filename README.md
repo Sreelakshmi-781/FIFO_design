@@ -15,30 +15,22 @@ This Verilog code implements a synchronous FIFO (First-In First-Out) that uses a
 
 ## Parameters
 <br>
-**Parameter**     	     **Description**
-<br>
-width        -       Width of each FIFO entry (default: 8 bits)
-<br>
-depth	       -       Number of FIFO storage locations (default: 16)
-<br>
-add_bus	     -       Address pointer width (default: 4 bits)
+| Parameter     | Description     |
+|---------------|-----------------|
+| `width`       | Width of each FIFO entry (default: 8 bits) |
+| `depth`       | Number of FIFO storage locations (default: 16) |
+| `add_bus`     | Address pointer width (default: 4 bits) |
 
 ## Input/Output Ports
 <br>
-**Port**	        **Direction**	        **Description**
-<br>
-clk	          Input	            Clock signal (common for read & write)
-<br>
-rst	          Input	            Active-high reset
-<br>
-we	          Input	            Write enable
-<br>
-re	          Input	            Read enable
-<br>
-din	          Input	            Data input
-<br>
-dout	        Output (reg)	    Data output
-<br>
-full	        Output	          FIFO full flag
-<br>
-empty	        Output	          FIFO empty flag
+| Signal | Direction | Description |
+|--------|-----------|-------------|
+| clk    | Input     | Clock signal |
+| rst    | Input     | Active-high reset |
+| we     | Input     | Write enable |
+| re     | Input     | Read enable |
+| din    | Input     | Data input |
+| dout     | Output(reg)    | Data output |
+| full     | Output     | FIFO full flag |
+| empty    | Output     | FIFO empty flag |
+
