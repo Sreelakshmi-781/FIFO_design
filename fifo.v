@@ -38,7 +38,8 @@ module syc_fifo(clk,rst,we,re,din,full,empty,dout);
         end
     end
 
-    assign full = ((wr_ptr==depth-1) && (rd_ptr==0))? 1:0;
-    assign empty = (wr_ptr==rd_ptr);
+    assign full  = ((wr_ptr == depth-1) && (rd_ptr == 0)) ? 1 : 0;
+    assign empty = (wr_ptr == rd_ptr);
+
 
 endmodule
